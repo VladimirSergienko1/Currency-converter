@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <img src="img/logo.png" alt="" class="money-img" />
+    <h1>Currency Converter</h1>
+    <p>Выберите валюту и нужное количество для перевода в другую валюту.</p>
+
+    <div class="container">
+      <div class="cur-one">
+        <div class="currency">
+          <select id="currency-one">
+            <option value="CUP">Cuban Peso</option>
+            <option value="ILS">Israeli Shekel</option>
+            <option value="KWD">Kuwaiti Dinar</option>
+            <option value="YER">Yemeni Rial</option>
+            <option value="MXN">Mexican Peso</option>
+            <option value="RSD">Serbian Dinar</option>
+            <option value="RUB">Russian Ruble</option>
+            <option value="SEK">Swedish Krona</option>
+            <option value="AZN">Azerbaijani Manat</option>
+            <option value="KZT">KazakhTenge</option>
+            <option value="LAK">Lao Kip</option>
+            <option value="LRD">Liberian Dollar</option>
+            <option value="SAR">Saudi Riyal</option>
+            <option value="AFN">Afghan Afghani</option>
+            <option value="TVD">Tuvaluan Dollar</option>
+            <option value="UAH">Ukrainian Hryvnia</option>
+            <option value="USD" selected>United States Dollar</option>
+            <option value="DKK">Danish Krone</option>
+            <option value="EGP">Egyptian Pound</option>
+            <option value="GEL">Georgian Lari</option>
+          </select>
+          <input type="number" id="amount-one" placeholder="0" value="1" />
+        </div>
+      </div>
+
+      <div class="swap-rate-container">
+        <div class="rate" id="rate"></div>
+      </div>
+
+      <div class="currency">
+        <select id="currency-two">
+          <option value="CUP">Cuban Peso</option>
+          <option value="ILS">Israeli Shekel</option>
+          <option value="KWD">Kuwaiti Dinar</option>
+          <option value="YER">Yemeni Rial</option>
+          <option value="MXN">Mexican Peso</option>
+          <option value="RSD">Serbian Dinar</option>
+          <option value="RUB">Russian Ruble</option>
+          <option value="SEK">Swedish Krona</option>
+          <option value="AZN">Azerbaijani Manat</option>
+          <option value="KZT">KazakhTenge</option>
+          <option value="LAK">Lao Kip</option>
+          <option value="LRD">Liberian Dollar</option>
+          <option value="SAR">Saudi Riyal</option>
+          <option value="EUR" selected>Euro</option>
+          <option value="AFN">Afghan Afghani</option>
+          <option value="TVD">Tuvaluan Dollar</option>
+          <option value="UAH">Ukrainian Hryvnia</option>
+          <option value="USD">United States Dollar</option>
+          <option value="DKK">Danish Krone</option>
+          <option value="EGP">Egyptian Pound</option>
+          <option value="GEL">Georgian Lari</option>
+        </select>
+        <input type="number" id="amount-two" placeholder="0" />
+      </div>
+
+      <div class="currency">
+        <select id="currency-three">
+          <option value="CUP">Cuban Peso</option>
+          <option value="ILS">Israeli Shekel</option>
+          <option value="KWD">Kuwaiti Dinar</option>
+          <option value="YER">Yemeni Rial</option>
+          <option value="MXN">Mexican Peso</option>
+          <option value="RSD">Serbian Dinar</option>
+          <option value="RUB">Russian Ruble</option>
+          <option value="SEK">Swedish Krona</option>
+          <option value="AZN">Azerbaijani Manat</option>
+          <option value="KZT" selected>KazakhTenge</option>
+          <option value="LAK">Lao Kip</option>
+          <option value="LRD">Liberian Dollar</option>
+          <option value="SAR">Saudi Riyal</option>
+          <option value="EUR">Euro</option>
+          <option value="AFN">Afghan Afghani</option>
+          <option value="TVD">Tuvaluan Dollar</option>
+          <option value="UAH">Ukrainian Hryvnia</option>
+          <option value="USD">United States Dollar</option>
+          <option value="DKK">Danish Krone</option>
+          <option value="EGP">Egyptian Pound</option>
+          <option value="GEL">Georgian Lari</option>
+        </select>
+        <input type="number" id="amount-three" placeholder="0" value="1" />
+      </div>
+
+      <div class="currency">
+        <select id="currency-four">
+          <option value="PLN" selected>Polish Złoty</option>
+          <option value="CUP">Cuban Peso</option>
+          <option value="ILS">Israeli Shekel</option>
+          <option value="KWD">Kuwaiti Dinar</option>
+          <option value="YER">Yemeni Rial</option>
+          <option value="MXN">Mexican Peso</option>
+          <option value="RSD">Serbian Dinar</option>
+          <option value="RUB">Russian Ruble</option>
+          <option value="SEK">Swedish Krona</option>
+          <option value="AZN">Azerbaijani Manat</option>
+          <option value="KZT">KazakhTenge</option>
+          <option value="LAK">Lao Kip</option>
+          <option value="LRD">Liberian Dollar</option>
+          <option value="SAR">Saudi Riyal</option>
+          <option value="EUR">Euro</option>
+          <option value="AFN">Afghan Afghani</option>
+          <option value="TVD">Tuvaluan Dollar</option>
+          <option value="UAH">Ukrainian Hryvnia</option>
+          <option value="USD">United States Dollar</option>
+          <option value="DKK">Danish Krone</option>
+          <option value="EGP">Egyptian Pound</option>
+          <option value="GEL">Georgian Lari</option>
+        </select>
+        <input type="number" id="amount-four" placeholder="0" value="1" />
+      </div>
+      <div class="currency">
+        <select id="currency-five">
+          <option value="CZK" selected>Czech Koruna</option>
+          <option value="CUP">Cuban Peso</option>
+          <option value="ILS">Israeli Shekel</option>
+          <option value="KWD">Kuwaiti Dinar</option>
+          <option value="YER">Yemeni Rial</option>
+          <option value="MXN">Mexican Peso</option>
+          <option value="RSD">Serbian Dinar</option>
+          <option value="RUB">Russian Ruble</option>
+          <option value="SEK">Swedish Krona</option>
+          <option value="AZN">Azerbaijani Manat</option>
+          <option value="KZT">KazakhTenge</option>
+          <option value="LAK">Lao Kip</option>
+          <option value="LRD">Liberian Dollar</option>
+          <option value="SAR">Saudi Riyal</option>
+          <option value="EUR">Euro</option>
+          <option value="AFN">Afghan Afghani</option>
+          <option value="TVD">Tuvaluan Dollar</option>
+          <option value="UAH">Ukrainian Hryvnia</option>
+          <option value="USD">United States Dollar</option>
+          <option value="DKK">Danish Krone</option>
+          <option value="EGP">Egyptian Pound</option>
+          <option value="GEL">Georgian Lari</option>
+        </select>
+        <input type="number" id="amount-five" placeholder="0" value="1" />
+      </div>
+      <div class="currency">
+        <select id="currency-six">
+          <option value="CUP">Cuban Peso</option>
+          <option value="ILS">Israeli Shekel</option>
+          <option value="KWD" >Kuwaiti Dinar</option>
+          <option value="YER">Yemeni Rial</option>
+          <option value="MXN">Mexican Peso</option>
+          <option value="RSD">Serbian Dinar</option>
+          <option value="RUB">Russian Ruble</option>
+          <option value="SEK" selected>Swedish Krona</option>
+          <option value="AZN">Azerbaijani Manat</option>
+          <option value="KZT">KazakhTenge</option>
+          <option value="LAK">Lao Kip</option>
+          <option value="LRD">Liberian Dollar</option>
+          <option value="SAR">Saudi Riyal</option>
+          <option value="EUR">Euro</option>
+          <option value="AFN">Afghan Afghani</option>
+          <option value="TVD">Tuvaluan Dollar</option>
+          <option value="UAH">Ukrainian Hryvnia</option>
+          <option value="USD">United States Dollar</option>
+          <option value="DKK">Danish Krone</option>
+          <option value="EGP">Egyptian Pound</option>
+          <option value="GEL">Georgian Lari</option>
+        </select>
+        <input type="number" id="amount-six" placeholder="0" value="1" />
+      </div>
+    </div>
+
+    <!-- custom javascript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
